@@ -1,0 +1,698 @@
+/* QUERYS */
+
+/* ? -- iPad Landscape --*/
+@media screen and (max-width: 1030px) {
+    .hero {
+        margin-left: 8rem;
+    }
+
+    .episodios {
+        height: 1300px;
+    }
+
+    .episodios h1.episodiosTitulo {
+        margin-top: 18.5rem;
+        margin-left: 8rem;
+    }
+
+    .iframes iframe {
+        width: 360px;
+        height: 300px;
+    }
+
+    .nosotros .nosotrosTxt {
+        margin-left: 0rem;
+    }
+
+    section.entrevistas h1 {
+        margin-left: 8rem;
+    }
+
+    .grid p {
+        font-size: 20px;
+    }
+}
+
+/* ?-- Query iPad Portrait --*/
+@media screen and (max-width: 900px) {
+
+    .nav {
+        position: relative;
+    }
+
+    .nav img.navLogo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .nav .navMenu {
+        display: flex;
+        justify-content: center;
+        padding: 17px;
+        position: relative;
+        right: 48px;
+        transition: all .6s ease-out;
+        -webkit-transition: all .6s ease-out;
+        -moz-transition: all .6s ease-out;
+        -ms-transition: all .6s ease-out;
+        -o-transition: all .6s ease-out;
+        -webkit-transition: all .4s ease-out;
+    }
+
+    .nav #toggle:checked+.navMenu {
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+    }
+
+    .navIcon {
+        width: 22px;
+        height: 3px;
+        display: block;
+        background-color: #000;
+        position: absolute;
+    }
+
+    #toggle:checked~.navMenu .navIcon {
+        background-color: transparent;
+    }
+
+    #toggle:checked~.navMenu .navIcon::before {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        top: 0;
+    }
+
+    #toggle:checked~.navMenu .navIcon::after {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        top: 0;
+    }
+
+
+    .navIcon:before {
+        content: '';
+        width: 22px;
+        height: 3px;
+        display: block;
+        background-color: #000;
+        position: absolute;
+        top: -7px;
+        transition: ease-out all .5s;
+        -webkit-transition: ease-out all .5s;
+        -moz-transition: ease-out all .5s;
+        -ms-transition: ease-out all .5s;
+        -o-transition: ease-out all .5s;
+    }
+
+    .navIcon:after {
+        content: '';
+        width: 22px;
+        height: 3px;
+        display: block;
+        background-color: #000;
+        position: absolute;
+        top: 7px;
+        transition: ease-out all .5s;
+        -webkit-transition: ease-out all .5s;
+        -moz-transition: ease-out all .5s;
+        -ms-transition: ease-out all .5s;
+        -o-transition: ease-out all .5s;
+    }
+
+
+
+    ul.listaNav {
+        visibility: visible;
+        flex-direction: column;
+    }
+
+    .overlay {
+        height: 285px;
+        width: 100%;
+        position: absolute;
+        z-index: 999;
+        top: 82px;
+        background-color: #0000EC;
+        display: none;
+        justify-content: flex-start;
+        align-items: center;
+        animation-delay: 0s;
+    }
+
+    .overlay.animated {
+        animation-duration: .6s;
+    }
+
+    .nav #toggle:checked~.overlay {
+        display: flex;
+    }
+
+    .listaNav li:nth-child(1) {
+        animation-delay: .2s;
+    }
+
+    .listaNav li.animated:nth-child(2) {
+        animation-delay: .6s;
+    }
+
+    .listaNav li.animated:nth-child(3) {
+        animation-delay: .8s;
+    }
+
+    .listaNav li.animated:nth-child(4) {
+        animation-delay: 1s;
+    }
+
+    .listaNav li {
+        margin-left: 48px;
+        padding-top: 2rem;
+    }
+
+    .listaNav li:first-child {
+        padding-top: 0;
+    }
+
+    .listaNav li a {
+        color: #FFF;
+        font-family: var(--fuenteTitulo);
+    }
+
+
+    .hero {
+        margin-left: 4rem;
+    }
+
+    .hero h1 {
+        font-size: 54px;
+    }
+
+    section.episodios {
+        height: 1100px;
+        margin-top: 6rem;
+        clip-path: polygon(0 10%, 100% 0, 100% 95%, 0% 100%);
+    }
+
+    .episodios h1.episodiosTitulo {
+        margin-left: 4rem;
+        margin-top: 12rem;
+    }
+
+    .iframes iframe {
+        width: 300px;
+        margin-bottom: 2rem;
+    }
+
+    .nosotros img {
+        width: 360px;
+        height: 500px;
+    }
+
+    .nosotrosTxt {
+        margin-left: 1rem;
+        margin-top: 5rem;
+        width: 50%;
+    }
+
+    .nosotrosTxt h1 {
+        font-size: 40px;
+    }
+
+    .nosotrosTxt p {
+        width: 80% !important;
+    }
+
+    section.entrevistas h1 {
+        margin-left: 4rem;
+        font-size: 40px;
+    }
+
+    .entrevistas img {
+        width: 50%;
+    }
+
+    section.topicos h1 {
+        font-size: 40px;
+        margin-left: 4rem;
+    }
+
+    .topicos .grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+    }
+
+    .grid p {
+        font-size: 20px;
+        width: 71%;
+    }
+
+    .novedades h1 {
+        font-size: 40px;
+    }
+
+    .novedades a.btn {
+        width: 20rem;
+    }
+
+    .novedades a.btn::before {
+        width: 20rem;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .footer ul {
+        padding-bottom: 1rem;
+    }
+
+    .footer ul li {
+        margin-right: 4rem;
+    }
+
+    .footer ul li:last-child {
+        margin-right: 0;
+    }
+
+    .footer ul li a i {
+        font-size: 24px;
+    }
+
+    .footer p {
+        margin: 1rem 0 0 0;
+        font-size: 18px;
+    }
+}
+
+
+/* ? -- Phone Portrait -- */
+@media screen and (max-width: 429px) {
+
+    .nav {
+        height: 62px;
+    }
+
+    .nav img.navlogo {
+        height: 28px;
+        width: 28px;
+        margin-left: 2rem;
+    }
+
+    .nav .navMenu {
+        padding: 14px;
+        right: 2rem;
+    }
+
+    .listaNav li {
+        margin-left: 2rem;
+    }
+
+    .overlay ul.listaNav li a {
+        font-size: 20px;
+    }
+
+    .hero {
+        margin: 2rem 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+        line-height: 42px;
+        width: 80%;
+        margin: 2rem 0 0.4rem -4.2rem;
+    }
+
+    .hero p {
+        font-size: 14px;
+        line-height: 22px;
+        width: 100%;
+        text-align: left;
+    }
+
+    a.btn {
+        font-size: 16px;
+        line-height: 22px;
+        height: 48px;
+        width: 288px;
+    }
+
+    a.btn::before {
+        height: 48px;
+        width: 288px;
+    }
+
+    section.episodios {
+        height: 1400px;
+        margin-top: 0;
+        background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+        clip-path: polygon(0 3%, 100% 0, 100% 97%, 0% 100%);
+    }
+
+    .episodios h1.episodiosTitulo {
+        font-size: 32px;
+        line-height: 42px;
+        margin-top: 3rem;
+        margin-left: 2rem;
+
+    }
+
+    .iframes iframe {
+        width: 298px;
+        height: 235px;
+    }
+
+    iframe:last-child {
+        margin-bottom: 0;
+    }
+
+    .nosotros {
+        flex-direction: column;
+    }
+
+    .nosotros img {
+        width: 360px;
+        height: 519px;
+    }
+
+    .nosotrosImg {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nosotros .nosotrosTxt {
+        margin: 2rem 0 0 0;
+        width: 100vw;
+        align-items: center;
+        text-align: left;
+    }
+
+    .nosotrosTxt h1 {
+        font-size: 32px;
+        line-height: 42px;
+        text-align: left;
+        margin-left: -5rem;
+    }
+
+    .nosotrosTxt p {
+        font-size: 14px;
+        line-height: 22px;
+        width: 30%;
+        margin-left: -1rem;
+    }
+
+    section.entrevistas h1 {
+        font-size: 32px;
+        margin: 3.37rem 2rem 2rem 2rem;
+    }
+
+    .entrevistas img {
+        width: 100%;
+    }
+
+    section.topicos h1 {
+        font-size: 32px;
+        margin: 3rem 2rem 2.31rem 2rem;
+    }
+
+    .topicos .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grid p {
+        width: 100%;
+    }
+
+    section.novedades {
+        height: 25rem;
+        clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .novedades h1 {
+        font-size: 32px;
+        line-height: 42px;
+        text-align: center;
+    }
+
+    .novedades a.btn {
+        height: 48px;
+        width: 288px;
+        font-size: 16px;
+    }
+
+    .novedades a.btn::before {
+        height: 48px;
+        width: 288px;
+    }
+
+    .footer {
+        margin: 0 3rem;
+    }
+
+    .footer ul {
+        margin-bottom: 0rem;
+    }
+
+    .footer ul li {
+        margin-right: 1rem;
+    }
+
+    .footer ul li a i {
+        font-size: 16px;
+    }
+
+    .footer p {
+        font-size: 14px;
+        margin: 0
+    }
+}
+
+
+@media screean and (min-width: 666px) and (max-width: 670px) {
+    section.episodios {
+        height: 800px;
+        margin-top: 0;
+    }
+}
+
+/*? --Phone landscape --*/
+@media screen and (min-width: 500px) and (max-width: 720px) {
+
+
+    .hero {
+        height: 100vh;
+        margin-top: 100px;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    section.episodios {
+        height: 1500px;
+        margin-top: 0;
+        clip-path: polygon(0 8%, 100% 0, 100% 92%, 0% 100%);
+    }
+
+    .episodios h1.episodiosTitulo {
+        font-size: 40px;
+        margin-top: 8rem;
+        margin-left: 3rem;
+    }
+
+    .episodios .iframes iframe {
+        margin-bottom: -2rem;
+        width: 470px;
+    }
+
+    section.nosotros {
+        flex-direction: column;
+    }
+
+    .nosotros .nosotrosImg {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nosotros img {
+        top: -1rem;
+    }
+
+    .nosotros .nosotrosTxt {
+        width: 100%;
+        top: 2rem;
+    }
+
+    .nosotrosTxt h1 {
+        font-size: 30px;
+        width: 80%;
+        margin-left: 3rem;
+    }
+
+    .nosotrosTxt p {
+        width: 78%;
+        margin-left: 3rem;
+        text-align: left;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    section.entrevistas {
+        margin-top: -4rem;
+    }
+
+    section.entrevistas h1 {
+        font-size: 30px;
+        margin-left: 3rem;
+    }
+
+    section.topicos h1 {
+        font-size: 30px;
+        margin-left: 3rem;
+    }
+
+    .topicos .grid p {
+        font-size: 16px;
+    }
+
+    section.novedades {
+        height: 20em;
+    }
+
+    .novedades h1 {
+        font-size: 36px;
+    }
+
+    .footer p {
+        font-size: 16px;
+    }
+
+    .footer ul li a i {
+        font-size: 20px;
+    }
+}
+
+/*? -- Phone small portrait */
+@media screen and (max-width: 380px) {
+
+    nav.nav {
+        height: 62px;
+    }
+
+    .overlay {
+        top: 62px;
+    }
+
+    .listaNav li {
+        margin-left: 2rem;
+    }
+
+    .overlay ul.listaNav li a {
+        font-size: 18px;
+    }
+
+    .hero {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    .hero h1 {
+        margin-left: -3.4rem;
+        font-size: 32px;
+    }
+
+    .boton .btn {
+        width: 220px;
+    }
+
+    .boton .btn::before {
+        width: 220px;
+        height: 44px;
+    }
+
+    section.episodios {
+        height: 1400px;
+        margin-top: 0;
+    }
+
+    .episodios h1.episodiosTitulo {
+        font-size: 28px;
+    }
+
+    .episodios .iframes iframe {
+        height: 232px;
+        margin-bottom: 2rem;
+    }
+
+    .nosotros img {
+        width: 310px;
+        height: 400px;
+    }
+
+    .nosotrosImg {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nosotros .nosotrosTxt {
+        display: block;
+    }
+
+    .nosotrosTxt h1 {
+        margin-left: 2rem;
+        font-size: 28px;
+    }
+
+    .nosotrosTxt p {
+        margin-left: 2rem;
+    }
+
+    section.entrevistas h1 {
+        font-size: 28px;
+        margin-top: -2.60rem;
+    }
+
+    section.topicos h1 {
+        font-size: 28px;
+    }
+
+    .grid p {
+        font-size: 20px;
+    }
+
+    section.novedades h1 {
+        font-size: 28px;
+    }
+
+    section.novedades a.btn {
+        width: 220px;
+        font-size: 14px;
+    }
+
+    section.novedades a.btn::before {
+        width: 220px;
+        font-size: 14px;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+
+    .footer ul li a i {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,369 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans&display=swap');
+
+/* Variables */
+:root {
+    --fuenteTexto: 'IBM Plex Mono';
+    --fuenteTitulo: 'IBM Plex Sans';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fuenteTexto);
+    color: #060A24;
+    scroll-behavior: smooth;
+}
+
+/* Barra de navegacion */
+
+nav.nav {
+    height: 82px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
+}
+
+.nav img.navLogo {
+    width: 36px;
+    height: 36px;
+    margin-left: 48px;
+}
+
+.toggle {
+    display: none;
+}
+
+.overlay {
+    height: auto;
+}
+
+ul.listaNav {
+    display: flex;
+}
+
+ul.listaNav li:last-child {
+    margin-right: 100px;
+}
+
+ul.listaNav li {
+    list-style: none;
+    margin-right: 48px;
+}
+
+ul.listaNav li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 28px;
+    transition: .4s ease-out;
+    -webkit-transition: .4s ease-out;
+    -moz-transition: .4s ease-out;
+    -ms-transition: .4s ease-out;
+    -o-transition: .4s ease-out;
+}
+
+ul.listaNav li a:hover {
+    color: #00F3BB;
+    text-decoration: line-through;
+}
+
+/* Hero */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    margin-top: 120px;
+    margin-left: 200px;
+    text-align: left;
+}
+
+.hero h1 {
+    font-size: 64px;
+    font-family: var(--fuenteTitulo);
+    text-align: left;
+    line-height: 84px;
+
+}
+
+/*! Animate.css -- control animaciones */
+
+.nav.animated {
+    animation-duration: 1s;
+    animation-delay: .2s;
+}
+
+.hero h1.animated {
+    animation-duration: 2s;
+    animation-delay: .4s;
+}
+
+.hero p.animated {
+    animation-duration: 2s;
+    animation-delay: .8s;
+}
+
+.hero a.animated {
+    animation-duration: 2s;
+    animation-delay: 1.2s;
+}
+
+/*! Termina el control en las animaciones del .hero */
+
+
+.hero .world {
+    text-decoration: line-through;
+}
+
+.hero .dot {
+    color: #0000EC;
+}
+
+.hero p {
+    width: 63%;
+    line-height: 24px;
+}
+
+a.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14rem;
+    height: 3.5rem;
+    margin-top: 56px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #00F3BB;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    position: relative;
+    box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, .3);
+}
+
+a.btn::before {
+    content: 'CONOCÉ MÁS';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14rem;
+    height: 3.5rem;
+    border-radius: 5px;
+    position: absolute;
+    color: #FFF;
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    opacity: 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: opacity .5s linear;
+    -webkit-transition: opacity .5s linear;
+    -moz-transition: opacity .5s linear;
+    -ms-transition: opacity .5s linear;
+    -o-transition: opacity .5s linear;
+}
+
+a.btn:hover::before {
+    opacity: 1;
+}
+
+/* Seccion episodios, clip path e iframes */
+
+.episodios {
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    clip-path: polygon(0 15%, 100% 0, 100% 90%, 0% 100%);
+    height: 1042px;
+    padding: 2rem 0;
+}
+
+.episodios h1.episodiosTitulo {
+    font-family: var(--fuenteTitulo);
+    font-size: 48px;
+    color: #FFF;
+    margin: 12.5rem 0 1.63rem 12rem;
+}
+
+.iframes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.iframes iframe {
+    width: 584px;
+    height: 232px;
+    margin-bottom: 4.5rem;
+}
+
+section.nosotros {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -8rem;
+}
+
+.nosotros img {
+    width: 28.6rem;
+    height: 41rem;
+    position: relative;
+}
+
+.nosotros .nosotrosTxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    position: relative;
+    width: 32rem;
+    margin-left: 3.9rem;
+}
+
+.nosotrosTxt h1 {
+    font-family: var(--fuenteTitulo);
+    font-size: 48px;
+    margin-bottom: 1.5rem;
+}
+
+.nosotros .nosotrosTxt p {
+    width: 100%;
+    text-align: left;
+    line-height: 24px;
+}
+
+section.entrevistas h1 {
+    font-family: var(--fuenteTitulo);
+    font-size: 48px;
+    margin: 4rem 0 2.25rem 12.5rem;
+}
+
+.entrevistas .containerImg {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.entrevistas img {
+    width: 33.3%;
+}
+
+section.topicos h1 {
+    font-family: var(--fuenteTitulo);
+    font-size: 48px;
+    margin: 4.31rem 0 3.5rem 12.5rem;
+}
+
+.topicos .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.remoto,
+.repensando,
+.bases,
+.seguridad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2.13rem;
+}
+
+.grid p {
+    font-family: var(--fuenteTitulo);
+    font-size: 24px;
+    font-weight: 700;
+    margin: 1rem 0 0 0;
+    width: 50%;
+}
+
+section.novedades {
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+    height: 32.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.novedades h1 {
+    font-family: var(--fuenteTitulo);
+    font-size: 48px;
+    color: #FFF;
+}
+
+.novedades a.btn {
+    width: 28rem;
+    flex-direction: row;
+    font-size: 18px;
+}
+
+.novedades a.btn::before {
+    content: 'ESCUCHÁ LOS EPISODIOS';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28rem;
+    height: 3.5rem;
+    border-radius: 5px;
+    position: absolute;
+    color: #FFF;
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    opacity: 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: opacity .5s linear;
+    -webkit-transition: opacity .5s linear;
+    -moz-transition: opacity .5s linear;
+    -ms-transition: opacity .5s linear;
+    -o-transition: opacity .5s linear;
+}
+
+.novedades a.btn:hover::before {
+    opacity: 1;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5.95rem;
+    margin: 0 6.25rem 0 6.25rem;
+}
+
+.footer p {
+    line-height: 28px;
+}
+
+.footer ul li {
+    list-style: none;
+    display: inline;
+    margin-right: 2rem;
+
+}
+
+.footer ul li a i {
+    font-size: 1.2rem;
+    line-height: 28px;
+    transition: .4s ease-out;
+    -webkit-transition: .4s ease-out;
+    -moz-transition: .4s ease-out;
+    -ms-transition: .4s ease-out;
+    -o-transition: .4s ease-out;
+}
+
+.footer ul li a i:hover {
+    color: #00F3BB;
+}
